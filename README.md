@@ -1,5 +1,5 @@
 # PyQt_demo
-分仓扫描
+最初学编程的时候用foxtable做的软件，尝试用PyQt重新做一次
 
 
 ![示例图片](https://raw.githubusercontent.com/SmallPotY/PyQt_demo/master/Images/demo1.png)
