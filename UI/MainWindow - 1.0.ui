@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1307</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>装箱扫描系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Images/ico.ico</normaloff>../Images/ico.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="2,5">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="styleSheet">
+       <string notr="true">border-image: \url(:/images/images/top.jpg);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="2" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">border-image: \*url();</string>
+           </property>
+           <property name="text">
+            <string>角色管理</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../img.qrc">
+             <normaloff>:/images/images/user.ico</normaloff>:/images/images/user.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="styleSheet">
+            <string notr="true">border-image: \*url();</string>
+           </property>
+           <property name="text">
+            <string>退出登陆</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../img.qrc">
+             <normaloff>:/images/images/exit.png</normaloff>:/images/images/exit.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>36</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::TabFocus</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: \*url();</string>
+         </property>
+         <property name="text">
+          <string> 装箱扫描系统 v1.1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,6">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>登陆用户：小锅</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>身份：管理员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>登陆日期：2018-08-05</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="leftMargin">
+            <number>13</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>13</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>44</width>
+               <height>44</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>导入单号</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/FromExcel32.ico</normaloff>:/images/images/FromExcel32.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>装箱复核</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/pack.png</normaloff>:/images/images/pack.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>导出明细</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/ToExcel32.ico</normaloff>:/images/images/ToExcel32.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>补打清单</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/PageSetup32.ico</normaloff>:/images/images/PageSetup32.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>产量统计</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/statistics.png</normaloff>:/images/images/statistics.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>66</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>命令调试</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../img.qrc">
+               <normaloff>:/images/images/config.png</normaloff>:/images/images/config.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>68</width>
+               <height>68</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="4,2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>订单预览</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3,0,3">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>选择日期范围：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDateEdit" name="dateEdit">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="sizeIncrement">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>~</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDateEdit" name="dateEdit_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>出库单号：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_9">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../img.qrc">
+                     <normaloff>:/images/images/find.png</normaloff>:/images/images/find.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_10">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../img.qrc">
+                     <normaloff>:/images/images/renovate.png</normaloff>:/images/images/renovate.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableWidget" name="tableWidget">
+               <column>
+                <property name="text">
+                 <string>序号</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>品牌</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>数量</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>完成进度</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,2">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>打印设置</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout" rowstretch="0,0" columnstretch="1,3" rowminimumheight="0,0" columnminimumwidth="0,0">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>装箱清单：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>外箱标签：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="comboBox_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>公告</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0" columnstretch="0">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>版本更新啦：xxxxx</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_3">
+          <column>
+           <property name="text">
+            <string>订单日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>品牌</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>出库单号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>订单数量</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>打包箱数</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>打包数量</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

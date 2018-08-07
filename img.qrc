@@ -1,0 +1,20 @@
+<RCC>
+  <qresource lang="python" prefix="images">
+    <file>images/LOGO.png</file>
+    <file>images/close.png</file>
+    <file>images/config.png</file>
+    <file>images/exit.png</file>
+    <file>images/find.png</file>
+    <file>images/FromExcel32.ico</file>
+    <file>images/ico.ico</file>
+    <file>images/lock.ico</file>
+    <file>images/pack.png</file>
+    <file>images/PageSetup32.ico</file>
+    <file>images/renovate.png</file>
+    <file>images/statistics.png</file>
+    <file>images/ToExcel32.ico</file>
+    <file>images/top.jpg</file>
+    <file>images/user.ico</file>
+
+  </qresource>
+</RCC>
